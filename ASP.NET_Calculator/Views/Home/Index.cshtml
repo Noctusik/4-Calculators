@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Kalkulator";
+}
+
+<div class="card mt-5">
+ 
+    @Html.TextBox("screenInput", null, new{ @class="calculatorScreen", disabled="true"})    
+
+    <div class="calculatorButton">
+        <button type="button" class="btn bg-light" onclick="addNumber('7')">7</button>
+        <button type="button" class="btn bg-light" onclick="addNumber('8')">8</button>
+        <button type="button" class="btn bg-light" onclick="addNumber('9')">9</button>
+        <button type="button" class="btn bg-primary" onclick="addOperation('-')">-</button>
+        <button type="button" class="btn bg-primary addButton" onclick="addOperation('+')">+</button>
+
+        <button type="button" class="btn bg-light" onclick="addNumber('4')">4</button>
+        <button type="button" class="btn bg-light" onclick="addNumber('5')">5</button>
+        <button type="button" class="btn bg-light" onclick="addNumber('6')">6</button>
+        <button type="button" class="btn bg-primary" onclick="addOperation('*')">*</button>
+        
+        <button type="button" class="btn bg-light" onclick="addNumber('1')">1</button>
+        <button type="button" class="btn bg-light" onclick="addNumber('2')">2</button>
+        <button type="button" class="btn bg-light" onclick="addNumber('3')">3</button>
+        <button type="button" class="btn bg-primary" onclick="addOperation('/')">/</button>
+        <button type="button" class="btn bg-success equalButton" onclick="getResult()">=</button>
+
+        <button type="button" class="btn bg-light zeroButton" onclick="addNumber('0')">0</button>
+        <button type="button" class="btn bg-light" onclick="addNumber(',')">,</button>
+        <button type="button" class="btn bg-danger" onclick="clearScreen()">C</button>
+        
+        
+    
+   
+
+    </div>
+</div>
